@@ -403,3 +403,60 @@ display: inline-block;
     object-fit: cover; /* Maintain aspect ratio and crop if necessary */
     
 }
+
+
+/* Define a CSS animation for sliding in */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to elements with the "highlight" class on small screens */
+@media (max-width: 576px) {
+    .highlight {
+        animation: slideIn 1s ease-in;
+    }
+}
+
+
+/* Key Highlights Section Styles */
+.key-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.highlight {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.highlight:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Media Query for Small Screens (e.g., Phones) */
+@media (max-width: 576px) {
+    .highlight {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
