@@ -1,0 +1,397 @@
+/* Resetting and General Styles */
+body {
+    background-color: #f8f9fa; /* Use a light background color */
+    font-family: Arial, sans-serif;
+    color: #333; /* Default text color */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('stage\ speech.jpeg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff; /* Text color on the hero section */
+}
+
+.hero h1 {
+    font-size: 36px; /* Adjust font size as needed */
+}
+
+/* Navigation Menu Styles */
+.navbar {
+    background-color: #fff; /* Navbar background color */
+    border-bottom: 1px solid #ddd; /* Add a border at the bottom of the navbar */
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Adjust the logo's max height as needed */
+}
+
+.navbar-toggler-icon {
+    background-color: #333; /* Color for the toggle button lines */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Navbar link text color */
+}
+
+/* Mission, Vision, and Belief Cards Styles */
+.card {
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Key Highlights Section Styles */
+.key-highlights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.highlight h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Text color in the footer */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff; /* Primary button background color */
+    color: #fff; /* Primary button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Animations for Background Elements */
+.fade-shape {
+    position: absolute;
+    background-color: #007bff;
+    border-radius: 50%;
+    animation: fadeIn 5s infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.3;
+        transform: scale(0);
+    }
+}
+
+
+/* Updated CSS for Welcome Message */
+.welcome-container {
+    background-color: #f8f9fa; /* Add a light background color */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.welcome-heading {
+    color: #198754; /* Change the heading text color */
+}
+
+.welcome-button {
+    background-color: #198754; /* Change the button background color */
+    color: #fff; /* Change the button text color */
+    border: none;
+}
+
+/* Center the button */
+.welcome-button {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Updated CSS for Testimonials Section */
+.testimonials {
+    background-color: #f8f9fa; /* Add a light background color */
+}
+
+.testimonial {
+    background-color: #fff; /* Add a white background color for testimonial cards */
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Center the testimonials */
+.testimonial {
+    margin: 0 auto;
+}
+
+
+/* Updated CSS for Mission, Vision, and Belief Cards */
+.mission-card,
+.vision-card,
+.belief-card {
+    background-color: #fff; /* Add a white background color */
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    
+}
+
+.mission-card h3,
+.vision-card h3,
+.belief-card h3 {
+    color: #198754; /* Change the heading text color */
+}
+/* Updated CSS for Cause Cards */
+.cause-card {
+    background-color: #fff; /* Add a white background color */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s ease; /* Add a smooth hover effect */
+}
+
+.cause-card:hover {
+    transform: translateY(-5px); /* Move the card slightly upward on hover */
+}
+
+.cause-title {
+    color: #198754; /* Change the title text color */
+}
+
+.cause-description {
+    color: #6c757d; /* Change the description text color */
+}
+
+/* Style the "Donate Now" buttons */
+.cause-card .btn-primary {
+    background-color: #198754; /* Change the button background color */
+    color: #fff; /* Change the button text color */
+    border: none;
+}
+
+
+/* Updated CSS for News Cards */
+.news-card {
+    background-color: #fff; /* Add a white background color */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s ease; /* Add a smooth hover effect */
+    margin-bottom: 20px;
+}
+
+.news-card:hover {
+    transform: translateY(-5px); /* Move the card slightly upward on hover */
+}
+
+.news-card h3 {
+    color: #198754; /* Change the title text color */
+}
+
+.news-card p {
+    color: #6c757d; /* Change the description text color */
+}
+
+/* Style the "Read More" buttons */
+.news-card .btn-primary {
+    background-color: #198754; /* Change the button background color */
+    color: #fff; /* Change the button text color */
+    border: none;
+}
+
+
+/* Updated CSS for Impact Statistics */
+.statistic {
+    background-color: #fff; /* Add a white background color */
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.statistic h3 {
+    color: #198754; /* Change the statistic number text color */
+}
+
+.statistic p {
+    color: #6c757d; /* Change the statistic label text color */
+}
+
+/* Updated CSS for Volunteer Opportunity Cards */
+.volunteer-opportunity {
+    background-color: #fff; /* Add a white background color */
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 20px;
+}
+
+.volunteer-opportunity h3 {
+    color: #198754; /* Change the title text color */
+}
+
+.volunteer-opportunity p {
+    color: #6c757d; /* Change the description text color */
+}
+
+/* Style the "Apply Now" buttons */
+.volunteer-opportunity .btn-primary {
+    background-color: #198754; /* Change the button background color */
+    color: #fff; /* Change the button text color */
+    border: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: gainsboro;
+    padding: 60px 0;
+  }
+  
+  .footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #007BFF;
+  }
+  
+  .footer .social-icons {
+    font-size: 24px;
+  }
+  
+  .footer .social-icons a {
+    margin-right: 15px;
+  }
+  
+  .footer-newsletter form {
+    display: flex;
+  }
+  
+  .footer-newsletter input[type="email"] {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+  }
+  
+  .footer-newsletter button {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .footer-newsletter button:hover {
+    background-color: #0056b3;
+  }
+
+  
+  /* Partner Logos */
+  .partner-logo img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  /* Back to Top Link */
+  .back-to-top a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .back-to-top a:hover {
+    color: #007BFF;
+  }
+  
+
+
+
+/* Updated CSS for Shaped Background Elements */
+.fade-shape {
+    position: absolute;
+    background-color: #198754; /* Change the background color */
+    opacity: 0.3; /* Reduce the opacity for a subtle effect */
+    border-radius: 50%; /* Create circular shapes */
+    transition: transform 0.3s ease-in-out; /* Add a smooth hover effect */
+}
+
+/* Add hover effect to the shapes */
+.fade-shape:hover {
+    transform: scale(1.2); /* Enlarge the shape on hover */
+}
+
+/* Updated CSS for Navbar Brand Logo */
+.logo {
+    max-width: 50px; /* Set a maximum width for the logo */
+    vertical-align: middle; /* Vertically align the logo within the navbar */
+}
+
+.partner-logo {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
+.about ul li a {
+    color: black;
+}
+
+.quick-links ul li a {
+color: #000;
+display: inline-block;
+}
