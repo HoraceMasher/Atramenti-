@@ -3,6 +3,16 @@ body {
     background-color: #f8f9fa; /* Use a light background color */
     font-family: Arial, sans-serif;
     color: #333; /* Default text color */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Ensure full width for the container */
+.container {
+    width: 100%;
+    max-width: 100%; /* Ensure full width */
+    margin: 3 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding to the container */
 }
 
 /* Hero Section Styles */
@@ -52,13 +62,13 @@ body {
 
 /* Key Highlights Section Styles */
 .key-highlights {
-    display: flex;
+
     justify-content: space-between;
 }
 
 .highlight {
     text-align: center;
-    flex: 1;
+    flex: 1px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -397,29 +407,40 @@ display: inline-block;
 }
 
 
-.carousel-image {
-    width: 500px; /* Adjust the width as needed */
-    height: 500px; /* Adjust the height as needed */
-    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
-    
+/* Style for the carousel container */
+#carouselExampleControls {
+    max-width: 100%; /* Make sure the carousel spans the entire available width */
+    margin: 0 auto; /* Center the carousel horizontally */
 }
 
-
-/* Define a CSS animation for sliding in */
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
+/* Style for carousel images */
+.carousel-item img {
+    max-width: 50%;
+    height: auto; /* Maintain the aspect ratio of images */
+    object-fit: cover; /* Crop images to fill the container */
 }
 
-/* Apply the animation to elements with the "highlight" class on small screens */
-@media (max-width: 576px) {
-    .highlight {
-        animation: slideIn 1s ease-in;
-    }
+/* Style for carousel captions */
+.carousel-caption {
+    padding: 10px; /* Add some padding to the captions */
+    color: #fff; /* Text color for captions */
+}
+
+/* Style for carousel caption text */
+.carousel-caption p {
+    margin-bottom: 0; /* Remove default margin from paragraph inside the caption */
+}
+
+/* Style for carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(203, 228, 227, 0.5); /* Semi-transparent background for control buttons */
+}
+
+/* Style for carousel control button icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #fff; /* Icon color for control buttons */
 }
 
 
