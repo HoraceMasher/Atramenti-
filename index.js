@@ -36,3 +36,32 @@ document.addEventListener("DOMContentLoaded", function () {
     statisticElements.forEach((element) => {
         observer.observe(element);
     });
+
+    
+    
+// Function to handle the intersection and apply animations to cards one at a time
+function handleCardIntersection(entries, observer) {
+    let delay = 0;
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add("animate__animated", "animate__fadeInUp");
+            }, delay);
+            delay += 200; // Adjust the delay between each card in milliseconds
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+// Create an Intersection Observer for cards
+const cardObserver = new IntersectionObserver(handleCardIntersection, {
+    root: null, // Use the viewport as the root
+    rootMargin: "0px", // No margin
+    threshold: 0.2, // 20% of the target element must be visible
+});
+
+// Observe each card with the "highlight" class
+const cardElements = document.querySelectorAll(".highlight");
+cardElements.forEach((element) => {
+    cardObserver.observe(element);
+});
