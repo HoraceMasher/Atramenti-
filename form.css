@@ -17,7 +17,7 @@ body {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('stage\ speech.jpeg'); /* Replace with your hero image */
+    background-image: url('_ (5).jpeg'); /* Replace with your hero image */
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -29,11 +29,31 @@ body {
     font-size: 36px; /* Adjust font size as needed */
 }
 
+
+.hero-content {
+    margin-top: -50px; /* Adjust the value as needed */
+    background-color: white; /* Optional: Add a background color to the content */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners to the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow to the content */
+}
+
+
 /* Navigation Menu Styles */
 .navbar {
-    background-color: #fff; /* Navbar background color */
-    border-bottom: 1px solid #ddd; /* Add a border at the bottom of the navbar */
+    border-bottom: 1px solid #ddd;
+    margin-top: 0px; /* Add a border at the bottom of the navbar */
+
 }
+
+
+a:hover {
+    color: orange;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
 
 .navbar-brand img {
     max-height: 40px; /* Adjust the logo's max height as needed */
@@ -134,11 +154,11 @@ footer {
 }
 
 .welcome-heading {
-    color: #198754; /* Change the heading text color */
+    color: #020b07; /* Change the heading text color */
 }
 
 .welcome-button {
-    background-color: #198754; /* Change the button background color */
+     /* Change the button background color */
     color: #fff; /* Change the button text color */
     border: none;
 }
@@ -188,7 +208,7 @@ footer {
 }
 /* Updated CSS for Cause Cards */
 .cause-card {
-    background-color: #fff; /* Add a white background color */
+    background-color: azure; /* Add a white background color */
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
