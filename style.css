@@ -1,0 +1,377 @@
+/* Header Styles */
+.header {
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.header img {
+    max-width: 100px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Background color with slight transparency */
+    position: fixed; /* Position the navbar absolutely */
+    top: 2px; /* Set the top to 2px to push it down slightly from the top */
+    left: 0; /* Set the left to 0 to make it span the entire width */
+    right: 0; /* Set the right to 0 to make it span the entire width */
+    z-index: 1; /* Ensure it's above other content */
+    padding: 10px 0;
+    max-height: 60px;
+
+}
+
+.navbar .navbar-brand img {
+    max-width: 80px;
+}
+
+.navbar-toggler-icon {
+    background-color: #FFF;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding: 0 15px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #F8F9FA;
+}
+
+/* Dropdown Styles */
+.navbar .dropdown-menu {
+    background-color: rgba(244, 232, 102, 0.3);
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: slideIn 0.3s forwards;
+}
+
+/* Keyframes for the slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.navbar .dropdown-item {
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust navbar breakpoint */
+@media (max-width: 767px) {
+    .navbar-expand-lg .navbar-toggler {
+        background-color: #FFF;
+    }
+}
+
+
+/* Key Highlights Section */
+.highlight {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFF;
+}
+
+/* Carousel Section */
+.carousel-image {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #F8F9FA;
+    padding: 40px 0;
+}
+
+.testimonial {
+    background-color: #FFF;
+    border: none;
+    padding: 20px;
+}
+
+/* Mission, Vision, Belief Cards */
+.mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mission-card, .vision-card, .belief-card {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: none;
+}
+
+/* Featured Causes Section */
+.featured-causes {
+    background-color: #F8F9FA;
+    padding: 40px 0;
+}
+
+.cause-card {
+    background-color: #FFF;
+    border: none;
+    padding: 20px;
+}
+
+/* Latest News or Blog Posts Section */
+.news-card {
+    background-color: #FFF;
+    border: none;
+    padding: 20px;
+}
+
+/* Hero Section */
+/* .hero {
+    background-image: url('image.jpg');
+    background-size: cover;
+    color: #FFF;
+    text-align: center;
+    padding: 100px 0;
+} */
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+/* Impact Statistics Section */
+.statistic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.statistic i {
+    font-size: 3rem;
+}
+
+/* Volunteer Opportunities Section */
+.volunteer-opportunity {
+    background-color: #FFF;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #007BFF;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #FFF;
+}
+
+/* Footer Links Styles */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+/* Adjust text styles */
+h2, h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007BFF;
+    color: #FFF;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
+/* Add hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Add the provided CSS styles for the hero section */
+/* ... (Other CSS styles) */
+
+/* Provided CSS styles for the hero section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url('image.jpg') top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+  }
+  
+  #hero-no-overlay {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/about1.jpg') top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+  }
+  
+  /* Add the rest of your existing CSS styles */
+  /* Customize the background and text colors */
+#signup {
+    color:white;
+    padding: 20px 0;
+   
+
+    
+  }
+
+  
+  
+  /* Center the content */
+  #signup .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    margin-top: 80px;
+    border-radius: 20px;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.3); /* Background color with slight transparency */
+    max-height: 100vh;
+    animation: slideIn 45s forwards;
+    right: 0px;
+
+
+
+  }
+  
+  /* Style the headline */
+  #signup h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #d2a430;
+  }
+  
+  /* Style the section description */
+  #vol-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: rgb(210, 204, 204);
+  }
+  
+  /* Style the "Features" list */
+  #vol-description p strong {
+    color: #d2a430;
+  }
+  
+  /* Style the "Register" button */
+  #reg-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  #reg-link:hover {
+    background: #0056b3;
+  }
+  
+  /* Style the registration form */
+  #vol-form {
+    padding: 30px;
+  }
+  
+  /* Style form inputs and labels */
+  #vol-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #vol-form input[type="text"],
+  #vol-form input[type="tel"],
+  #vol-form input[type="email"] {
+    color: #333;
+  }
+  
+  /* Style the "Register" button in the form */
+  #vol-form button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #vol-form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Terms and conditions link */
+  #vol-form a {
+    color: #007bff;
+  }
+  
+  /* Adjust the secondary headline */
+  .secondary-headline {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Increase the section's width for larger screens */
+  @media (min-width: 768px) {
+    #signup .container {
+      max-width: 800px;
+    }
+  }
+  
